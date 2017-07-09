@@ -1,0 +1,145 @@
+{
+  "title": "Google I/O 2017 Extended in Seoul",
+  "description": "Google I/O 2017 Extended in Seoul!! 서울에서도 Google I/O를 합니다!",
+  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
+  "dates": "2017. 07. 02.",
+  "locationAddressShort": "",
+  "motto": "Google I/O 2017 Extended in Seoul",
+  "playIcon": "See how it was in 2015",
+  "c4p": "Become a speaker",
+  "buyTicket": "Apply",
+  "backToTop": "Back to top",
+  "subscribe": "Subscribe",
+  "yourEmail": "Your email",
+  "subscribeNote": "No spam, only the latest news and updates!",
+  "contactUs": "Contact us",
+  "ticketsTitle": "Tickets",
+  "ticketsDetails": "Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.",
+  "close": "Close",
+  "soldOutTickets": "Sold Out",
+  "Title": "Social",
+  "socialMotto": "Add to circles, like, follow or connect with us on",
+  "beforeHashtag": "What's up",
+  "clickToViewPhotos": "Click here to view more photos",
+  "partners": "Partners",
+  "becomePartner": "Become a partner",
+  "featuredVideosTitle": "#IO Extended '16 Featured Sessions",
+  "featuredVideosViewAll": "View all videos",
+  "featuredPeopleTitle": "Speakers",
+  "featuredPeopleViewAll": "View all speakers",
+  "action": "See how it was",
+  "locationTitle": "세종대학교 광개토관 컨벤션홀(B2)",
+  "locationDescription": "주차는 지원돠지 않습니다.\n 가급적 대중교통을 이용해주세요.",
+  "locationAddress": "서울특별시 광진구 군자동 98",
+  "organizerTitle": "GDG Korea",
+  "aboutOrganizers": "<a href='http://slack.gdg.kr' target='_blank'>GDG Korea</a> 에는 3개의 지역기반 그룹(<a href='https://www.meetup.com/ko-KR/GDG-Seoul/' target='_blank'>GDG Seoul</a>, <a href='https://www.meetup.com/ko-KR/GDG-Incheon/' target='_blank'>GDG Incheon</a>, <a href='https://www.meetup.com/ko-KR/GDG-Busan/' target='_blank'>GDG Busan</a>), 2개의 기술기반 그룹(<a href='https://www.meetup.com/ko-KR/GDG-Korea-Android/' target='_blank'>GDG Korea Android</a>, <a href='https://www.meetup.com/ko-KR/GDG-WebTech/' target='_blank'>GDG Korea WebTech</a>), 1개의 스페셜한 그룹(<a href='https://www.meetup.com/ko-KR/GDG-Campus/' target='_blank'>GDG Korea Campus</a>)이 있습니다. ",
+  "openTeamPage": "Open team page",
+  "whatIsGdg": "What is GDG?",
+  "aboutGdg": "<a href='https://developers.google.com/groups/' target='_blank'>Google Developers Group (GDG)</a>는 전 세계 100여 국, 550여개의 챕터가 있으며, 한국에는 현재 7개의 챕터가 있습니다. Google 기술에 관심이 있는 개발자라면 누구나 GDG 맴버가 될 수 있습니다. 구글기술에 관심이 있는 많은 개발자들의 네트워크와 구글기술에 대한 활동이 이어지는 모임으로 진행될 것입니다. 아직 GDG Korea에 참여를 고민하시나요? 고민하지 마시고 편한 마음으로 참여하십시요.",
+  "readMore": "Read more",
+  "copyLink": "Copy link",
+  "filteredBy": "filtered by",
+  "clearAll": "Clear all",
+  "filter": "Filter",
+  "latestNews": "Latest news",
+  "continueReading": "Continue reading",
+  "viewPresentation": "View presentation",
+  "viewVideo": "View video",
+  "skills": "Skills",
+  "share": "Share",
+  "shareWith": "Share with",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "mySchedule": "My Schedule",
+  "browseMore": "Browse more events",
+  "youShouldSignInSessions": "Sign in to save sessions",
+  "youShouldSignInRating": "Sign in to rate sessions",
+  "offlineMessage": "You are offline",
+  "removedFromSchedule": "Removed from My Schedule",
+  "addedToSchedule": "Added to My Schedule",
+  "rateSession": "Rate session",
+  "footerBlocks": [
+    {
+      "title": "For visitors",
+      "links": [
+        {
+          "text": "Team",
+          "url": "/team/",
+          "newTab": false
+        },
+        {
+          "text": "Code of Conduct",
+          "url": "/cod/",
+          "newTab": false
+        },
+        {
+          "text": "Google Developers",
+          "url": "https://developers.google.com/",
+          "newTab": true
+        },
+        {
+          "text": "GDG DevFest Ukraine 2013",
+          "url": "http://gdg-devfest-ua.appspot.com/",
+          "newTab": true
+        },
+        {
+          "text": "GDG DevFest Ukraine 2014",
+          "url": "http://devfest.gdg.org.ua/2014/",
+          "newTab": true
+        },
+        {
+          "text": "GDG DevFest Ukraine 2015",
+          "url": "http://devfest.gdg.org.ua/2015/",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "title": "For Partners",
+      "links": [
+        {
+          "text": "Partnership Proposition",
+          "url": "http://bit.ly/df16-sponsor",
+          "newTab": true
+        },
+        {
+          "text": "Media Kit",
+          "url": "http://bit.ly/df16-media",
+          "newTab": true
+        }
+      ]
+    }
+  ],
+  "contactBlock": {
+    "links": [
+      {
+        "text": "gdg.korea@gmail.com",
+        "url": "mailto:gdg.korea@gmail.com"
+      }
+    ]
+  },
+  "teamPageTitle": "I/O Extended in Seoul 17을 위해 고생하신 분",
+  "teamPageText": "짝짝짝, 일헤라 GDG 노예들이여~~ 음 뭐라고 써야 하지",
+  "statistics": [
+    {
+      "counter": 600,
+      "caption": "Attendees"
+    },
+    {
+      "counter": 2,
+      "caption": "Days"
+    },
+    {
+      "counter": 30,
+      "caption": "Sessions"
+    },
+    {
+      "counter": 3,
+      "caption": "Tracks"
+    }
+  ],
+  "callToAction": {
+    "videoTitle": "GDG DevFest 2015",
+    "videoId": "DfMnJAzOFng"
+  }
+}

@@ -1,0 +1,265 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item-body.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+<link rel="import" href="../../bower_components/google-map/google-map.html">
+
+<link rel="import" href="../styles/shared-styles.html">
+
+
+<dom-module id="map-block">
+
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 40px 0;
+        position: relative;
+        overflow: visible;
+        min-height: 450px;
+        --paper-item-disabled-color: var(--primary-text-color);
+      }
+
+      google-map,
+      .disable-map-events {
+        @apply(--layout-fit);
+      }
+
+      .container {
+        @apply(--layout-horizontal);
+      }
+
+      .card-wrapper {
+        @apply(--layout-horizontal);
+        @apply(--layout-flex);
+        @apply(--layout-around-justified);
+      }
+
+      .card-content {
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+
+      .card {
+        --paper-card-header-text: {
+          color: #FFFFFF;
+          font-weight: 300;
+        };
+        min-width: 320px;
+        max-width: 400px;
+        background: #536DFE;
+      }
+
+      paper-item-body {
+        color: #fff;
+        padding: 0 29px;
+        font-size: 15px;
+        line-height: 1.87;
+      }
+
+      paper-icon-item iron-icon {
+        --iron-icon-fill-color: var(--default-primary-color);
+      }
+
+      .card .bottom-link {
+        color: var(--secondary-text-color);
+      }
+
+      .header {
+        height: 250px;
+        position: relative;
+      }
+
+      .header-image {
+        @apply(--layout-fit);
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        transition: background-image 1s ease-in-out;
+        will-change: background-image;
+      }
+
+      .title-text {
+        padding: 16px;
+        position: absolute;
+        bottom: 0;
+        font-size: 24px;
+        color: #fff;
+      }
+
+      .additional-space {
+        display: none;
+      }
+      .button {
+          background: #1CE8B5;
+          border-radius: 2px;
+          color: #424242;
+          display: inline-block;
+          font-weight: 500;
+          padding: 5px 25px;
+          text-transform: uppercase;
+          transition: all 200ms ease;
+      }
+
+      .card-link {
+        margin : 45px;
+      }
+
+
+      @media (min-width: 601px) {
+        .card {
+          min-width: 400px;
+          position: absolute;
+          right: 120px;
+          width: 380px;
+          bottom: -90px;
+        }
+      }
+
+      @media (min-width: 961px) {
+        :host {
+          padding: 100px 0;
+          margin: 0 0 100px 0;
+        }
+
+        .additional-space {
+          @apply(--layout);
+          @apply(--layout-flex);
+        }
+      }
+
+
+    </style>
+
+    <template is="dom-if" if="[[selected]]">
+      <google-map
+        zoom="{$ location.pointer.zoom $}"
+        latitude="{$ location.mapCenter.latitude $}"
+        longitude="{$ location.mapCenter.longitude $}"
+        api-key="{$ location.apiKey $}"
+        styles="[[options]]"
+        disable-zoom disable-default-ui
+      >
+        <google-map-marker
+          latitude="{$ location.pointer.latitude $}"
+          longitude="{$ location.pointer.longitude $}"
+        ></google-map-marker>
+      </google-map>
+    </template>
+    >
+    <div class="disable-map-events"></div>
+    <div class="container">
+      <div class="additional-space"></div>
+      <div class="card-wrapper">
+        <paper-card class="card">
+          <div class="header paper-card">
+            <div class="header-image" style$="background-image: url([[_currentImage]])"></div>
+            <div class="title-text">{$ locationTitle $}</div>
+          </div>
+          <div class="paper-card-container">
+            <div class="card-content list">
+              <!-- <paper-icon-item disabled> -->
+                <!-- <iron-icon icon="icons:feedback" item-icon></iron-icon> -->
+                <paper-item-body>세종컨벤션센터는 세종대학교에서 아차산의 수려한 자연경관과 도심 속 푸른 숲 어린이대공원이 어우러진 자연감각의 현대적 시설로 편리한 교통과 One-Stop-Service가 제공되는 국제규모의 전문 컨벤션입니다.<br>주차는 지원되지 않습니다.<br>가급적 대중교통을 이용해주세요.</paper-item-body>
+            </div>
+            <div class="card-link">
+              <a class="button" href="https://www.google.com/maps/dir/{$ location.pointer.latitude $},{$ location.pointer.longitude $}/@{$ location.pointer.latitude $},{$ location.pointer.longitude $},18z" target="_blank" >Explore Map</a>
+              <!-- <a class="bottom-link"
+                 href="https://www.google.com/maps/dir/{$ location.pointer.latitude $},{$ location.pointer.longitude $}/@{$ location.pointer.latitude $},{$ location.pointer.longitude $},18z"
+                 target="_blank"
+                 rel="noopener noreferrer"
+              > -->
+                <!-- <paper-icon-button icon="icons:directions"></paper-icon-button> -->
+              </a>
+            </div>
+          </div>
+        </paper-card>
+      </div>
+    </div>
+
+  </template>
+
+  <script>
+    (function () {
+      'use strict';
+
+      Polymer({
+
+        is: 'map-block',
+
+        properties: {
+          options: {
+            type: String,
+            value: function () {
+              return [{
+                stylers: [{
+                  'lightness': 40
+                }, {
+                  'visibility': 'on'
+                }, {
+                  'gamma': 0.9
+                }, {
+                  'weight': 0.4
+                }]
+              }, {
+                'elementType': 'labels',
+                'stylers': [{
+                  'visibility': 'on'
+                }]
+              }, {
+                'featureType': 'water',
+                'stylers': [{
+                  'color': '#5dc7ff'
+                }]
+              }];
+            }
+          },
+
+          images: {
+            type: Array,
+            value: {$ location.images | dump | safe $}
+          },
+
+          _currentSourceIndex: {
+            type: Number,
+            value: 0
+          },
+
+          _currentImage: {
+            type: String
+          }
+        },
+
+        ready: function () {
+          this._currentImage = this.images[this._currentSourceIndex];
+          if (this.images.length > 1) {
+            var that = this;
+            setInterval(function () {
+              that.nextImage();
+            }, 4000);
+          }
+        },
+
+        previousImage: function () {
+          this._currentSourceIndex = (this._currentSourceIndex > 0) ? this._currentSourceIndex - 1 : this.images.length - 1;
+          this._currentImage = this.images[this._currentSourceIndex];
+        },
+
+        nextImage: function () {
+          this._currentSourceIndex = (this._currentSourceIndex < this.images.length - 1) ? this._currentSourceIndex + 1 : 0;
+          this._currentImage = this.images[this._currentSourceIndex];
+        }
+
+      });
+
+    }());
+  </script>
+
+</dom-module>

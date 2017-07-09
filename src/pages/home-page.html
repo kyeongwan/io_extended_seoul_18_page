@@ -1,0 +1,174 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../behaviors/cascaded-behavior.html">
+<link rel="import" href="../behaviors/page-behavior.html">
+<link rel="import" href="../elements/statistics-block.html">
+<link rel="import" href="../elements/featured-people.html">
+<link rel="import" href="../elements/featured-videos.html">
+<link rel="import" href="../elements/call-to-action.html">
+<link rel="import" href="../elements/about-block.html">
+<link rel="import" href="../elements/footer-block.html">
+<link rel="import" href="../elements/logos-block.html">
+<link rel="import" href="../elements/map-block.html">
+
+
+<dom-module id="home-page">
+
+  <template>
+
+<style type="text/css">
+
+  .hero {
+    max-width: 1080px;
+    margin : 0 auto;
+    padding: 30px;
+
+    font-size: 15px;
+    line-height: 1.87;
+    color: #424242;
+  }
+
+  .hero .hero__title--sm {
+    font-size: 28px;
+  }
+
+  .hero .hero__title {
+    margin: 30px 0;
+    color: #424242;
+  }
+
+ 
+
+  .hero .hero__date{
+    font-size: 18px;
+    line-height: 1.44;
+    color: #424242;
+  }
+
+  .hero .hero__location {
+    font-size: 14px;
+    line-height: 20px;
+    color: #424242;
+  }
+  .button {
+    background: #1CE8B5;
+    border-radius: 2px;
+    color: #424242;
+    display: inline-block;
+    font-weight: 500;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .box__cta {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+   @media (min-width: 601px){
+    .hero {
+      padding: 120px 60px;
+    }
+
+    .hero .hero__location {
+      font-size: 15px;
+      line-height: 1.87;
+      color: #424242;
+    }
+
+     .hero .hero__title{
+        max-width: 450px;
+    }
+  }
+
+
+    font-size: 15px;
+    line-height: 1.87;
+  }
+
+
+</style>
+    <!-- <statistics-block app="{{app}}" cascaded></statistics-block> -->
+    <div class="hero section  ">
+      <div class="hero__content">
+        <div class="grid ">
+          <div class="grid__item grid__item--12-cols grid__item--7-cols--gt-md">
+            <div class="hero__main ">
+              <div class="hero__logo hero__logo--spacer">
+                <div class="hero__logo hero__logo--mobile">
+                  <svg width="188" height="133" viewBox="0 0 188 133" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#5471F9" d="M0 111.963h47.71V17.9H0z"></path><path fill="#31E8B7" d="M82.85 0L53.308 131.147l7.42 1.642L90.273 1.642z"></path><path d="M136.648 14c-28.3 0-51.242 22.745-51.242 50.8 0 28.057 22.942 50.8 51.242 50.8 28.301 0 51.242-22.743 51.242-50.8 0-28.055-22.94-50.8-51.242-50.8" fill="#5471F9"></path></g></svg>   
+                </div>
+              </div>
+              <div class="hero__title hero__title--sm" aria-level="1" role="heading">
+                Google I/O!! 서울에서도 합니다!! Google I/O 2017 Extended in Seoul!!
+              </div>
+              <div class="hero__date">
+                JUL 2, 2017
+              </div>
+              <div class="hero__location">
+                세종대학교 광개토관 컨벤션홀
+              </div>
+            </div>
+          </div>
+          <div class="box__cta">
+            <a href="https://www.meetup.com/ko-KR/GDG-Seoul/events/240286299/" target="_blank" class="button">Apply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <featured-videos app="{{app}}" cascaded></featured-videos>
+    <about-block app="{{app}}" cascaded></about-block>
+    <featured-people app="{{app}}" people="{{people}}" cascaded></featured-people>
+    <map-block app="{{app}}" selected="{{selected}}" cascaded></map-block>
+    <logos-block app="{{app}}" cascaded></logos-block>
+    <footer-block app="{{app}}" cascaded></footer-block>
+
+  </template>
+
+  <script>
+    (function () {
+      'use strict';
+
+      Polymer({
+
+        is: 'home-page',
+
+        behaviors: [
+          HOVERBOARD.PageBehavior,
+          HOVERBOARD.CascadedBehavior
+        ],
+
+        properties: {
+          people: {
+            type: Array
+          },
+
+          posts: {
+            type: Array
+          },
+
+          logos: {
+            type: Array
+          },
+
+          videos: {
+            type: Array
+          }
+        },
+
+        ready: function() {
+          this.updateCascadedNodes();
+        }
+
+      });
+
+    }());
+  </script>
+
+</dom-module>
