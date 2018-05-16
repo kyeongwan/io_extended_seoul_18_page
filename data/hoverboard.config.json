@@ -28,7 +28,7 @@
     "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
   },
   "hashtag": "dfua",
-  "disqusShortName": "gdg-io-extended-seoul-17",
+  "disqusShortName": "gdg-io-extended-seoul-18",
   "partnershipProposition": "http://bit.ly/df16-sponsor",
   "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLF_OUznA3RTRSTDdjnlzyC-rKVq6nq4S7",
   "enableSessionsRating": true,
@@ -48,6 +48,10 @@
     {
       "route": "team",
       "permalink": "/team/"
+    },
+    {
+      "route": "cod",
+      "permalink": "/cod/"
     }
   ],
   "social": [
@@ -109,6 +113,14 @@
     },
     "team": {
       "title": "GDG Team",
+      "headerSettings": {
+        "backgroundColor": "#ffffff",
+        "fontColor": "#4A4A4A",
+        "tabBarColor": "#fff"
+      }
+    },
+    "cod": {
+      "title": "Code of Conducts",
       "headerSettings": {
         "backgroundColor": "#ffffff",
         "fontColor": "#4A4A4A",

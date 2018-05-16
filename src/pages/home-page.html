@@ -178,6 +178,22 @@ width:46%}
      .hero .hero__title{
         max-width: 450px;
     }
+    .mainhall {
+      height: 300px;
+      width: 100%;
+    }
+    .photo {
+      height: 400px;
+    }
+  }
+
+  .mainhall {
+    height: 600px;
+    width: 100%;
+  }
+
+  .photo {
+    height: 700px;
   }
 
 
@@ -188,9 +204,6 @@ width:46%}
 
 </style>
 
-<script src="../styles/snap.svg.min.js"></script>
-<script src="../styles/main-99f7a8d8f56527c7d56c6c8a8a4f6eff.min.js"></script>
-<script src="../styles/digit1.js"></script>
     <!-- <statistics-block app="{{app}}" cascaded></statistics-block> -->
     <div class="hero section  ">
       <div class="hero__content">
@@ -206,70 +219,6 @@ width:46%}
   
 
 
-
-    <!-- 카운트 다운 시작 -->
-    <div class="countdown js-countdown-wrapper" aria-label="I/O countdown graphic: 58 days, 9 hours, 42 minutes, 56 seconds until I/O 2018">
-      <div class="unit -days js-days-wrap" aria-hidden="true">
-        <div class="digit">
-          <div class="scaler">
-            <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="days-first-digit" dataset-digit="days-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-            </div>
-          </div>
-          <div class="digit">
-            <div class="scaler">
-              <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="days-second-digit" dataset-digit="days-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-              </div>
-            </div>
-            <span class="label">D</span>
-          </div>
-
-          <div class="unit -hours js-hours-wrap" aria-hidden="true">
-            <div class="digit">
-              <div class="scaler">
-                <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="hours-first-digit" dataset-digit="hours-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-                </div>
-              </div>
-              <div class="digit">
-                <div class="scaler">
-                  <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="hours-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-                  </div>
-                </div>
-                <span class="label">H</span>
-              </div>
-
-              <div class="unit -minutes js-minutes-wrap" aria-hidden="true">
-                <div class="digit">
-                  <div class="scaler">
-                    <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="minutes-first-digit" dataset-digit="minutes-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-                    </div>
-                  </div>
-                  <div class="digit">
-                    <div class="scaler">
-                      <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="minutes-second-digit" dataset-digit="minutes-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-                      </div>
-                    </div>
-                    <span class="label">M</span>
-                  </div>
-
-                  <div class="unit -seconds js-seconds-wrap" aria-hidden="true">
-                    <div class="digit">
-                      <div class="scaler">
-                        <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="seconds-first-digit" dataset-digit="seconds-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-                        </div>
-                      </div>
-                      <div class="digit">
-                        <div class="scaler">
-                          <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="seconds-second-digit" dataset-digit="seconds-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
-                          </div>
-                        </div>
-                        <span class="label">S</span>
-                      </div>
-                    </div>
-                    <!-- 카운트다운 끝 -->
-
-
-
-
                   </div>
             </div>
           </div>
@@ -279,8 +228,15 @@ width:46%}
         </div>
       </div>
     </div>
+    <div class="photo">
+       <iron-image
+          class="mainhall"
+          src="/images/mainhall.jpg"
+          sizing="cover"
+        ></iron-image>
+    </div>
     
-    <featured-videos app="{{app}}" cascaded></featured-videos>
+    <!-- <featured-videos app="{{app}}" cascaded></featured-videos> -->
     <about-block app="{{app}}" cascaded></about-block>
     <featured-people app="{{app}}" people="{{people}}" cascaded></featured-people>
     <map-block app="{{app}}" selected="{{selected}}" cascaded></map-block>
@@ -328,5 +284,10 @@ width:46%}
 
     }());
   </script>
+
+  <script src="../../scripts/snap.svg.min.js"></script>
+
+<script src="../../scripts/main-99f7a8d8f56527c7d56c6c8a8a4f6eff.min.js"></script>
+<script src="../../scripts/digit1.js"></script>
 
 </dom-module>

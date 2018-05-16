@@ -1,53 +1,35 @@
-# 1. Purpose
+# Code of Conduct
 
 
-A primary goal of [GDG Lviv](http://lviv.gdg.org.ua/) is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof). 
-GDG Lviv prides itself on being an open, respectful, and inclusive community. That means the [jerky behavior](https://meta.wikimedia.org/wiki/Don%27t_be_a_jerk) isn’t allowed at GDG meetings.
+Google I/O Extended Seoul 은 개발자 지향 콘퍼런스로서 권리 침해 없는 행사를 위하여 타인에게 불쾌감을 줄 수 있는 성 정체성, 성적 취향, 장애, 외모, 민족, 국적, 인종, 나이, 정치, 종교 등에 대한 발언은 금지합니다.
 
-This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
-We invite all those who participate in Google Developers Group to help us create safe and positive experiences for everyone.
+행동강령은 Google Developers Group 행사에 참여하는 모든 개인에게 해당하며 위반 시 퇴장 등의 제재를 받을 수 있습니다. 행동강령 위반 사례에 대한 내용은 공개될 수 있습니다.
+<br>
+<br>
 
-# 2. Open [Source/Culture/Tech] Citizenship
+# 1. 사려 깊게 행동해주세요.
 
-A supplemental goal of this Code of Conduct is to increase open [source/culture/tech] citizenship by encouraging participants to recognize and strengthen the relationships between our actions and their effects on our community. Communities mirror the societies in which they exist, and positive action is essential to counteract the many forms of inequality and abuses of power that exist in society. If you see someone who is making an extra effort to ensure our community is welcoming, friendly, and encourages all participants to contribute to the fullest extent, we want to know.
+우리는 모두 같은 공동체의 구성원입니다. 그러므로 다른 사람들에게 친절하게 그리고 따듯하게 맞이하는 좋은 사람이 되어주세요. 다른 사람이 함께하고 싶어 하는 사람이 되어주세요.
 
-# 3. Expected Behavior
 
-The following behaviors are expected and requested of all community members:
+# 2. 서로를 존중해 주세요.
 
-- Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
-- Exercise consideration and respect in your speech and actions.
-- Attempt collaboration before a conflict.
-- Refrain from demeaning, discriminatory, or harassing behavior and speech.
-- Be mindful of your surroundings and your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
+활발한 토론은 건강한 개발자 생태계에 도움이 되지만, 비판이 아닌 비난은 해가 됩니다. 의견을 공감하려 노력하고, 갈등을 녹여가며 함께해주세요. 서로를 이해하기 위해 노력해주세요.
 
-# 4. Unacceptable Behavior
+# 3. 말과 행동에 책임감을 보여주세요.
 
-The following actions are considered harassment and are unacceptable within our community:
+우리는 공동체의 구성원으로서 하는 말과 행동에 대해 책임이 있습니다. 그로 인해 문제가 발생한다면 바로잡아야 합니다. 어떠한 경우라도 말과 행동으로 인해 타인이 불쾌감을 느꼈다면 문제에 해당됩니다.
 
-- Violence, threats of violence or violent language directed against another person.
-- Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
-- Posting or displaying sexually explicit or violent material.
-- Posting or threatening to post other people’s personally identifying information ("doxing").
-- Personal insults, particularly those related to gender, sexual orientation, race, religion, or disability.
-- Inappropriate photography or recording.
-- Inappropriate physical contact. You should have someone’s consent before touching them.
-- Unwelcome sexual attention. This includes sexualized comments or jokes; inappropriate touching, groping, and unwelcomed sexual advances.
-- Deliberate intimidation, stalking or following (online or in person).
-- Advocating for, or encouraging, any of the above behavior.
-- Sustained disruption of community events, including talks and, presentations.
+# 4. 적극적으로 참여해주세요.
 
-#  5. Consequences of Unacceptable Behavior
+적극적인 참여는 서로의 거리를 줄이고 보다 큰 가치를 만들어 냅니다. 적극적으로 참여하며 조화롭게 어울려주세요.
 
-Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated.
-Anyone asked to stop unacceptable behavior is expected to comply immediately.
-If a community member engages in unacceptable behavior, the community organizers may take any action they deem appropriate, up to and including a temporary ban or permanent expulsion from the community without warning (and without refund in the case of a paid event.
+# 5. 자유롭게 도움을 구하세요.
 
-# 6. Scope
+곤란한 상황을 마주쳤다면 주위에 도움을 요청하세요. 그리고 도움을 요청받았다면 주저하지 말고 도와주세요.
 
-We expect all community participants to abide by this Code of Conduct in all community venues–online and in-person–as well as in all one-on-one communications about community business. This code of conduct and its related procedures also applies to unacceptable behavior occurring outside the scope of community activities when such behavior has the potential to affect the safety and well-being of community members adversely.
+<br>
 
-# 7. Contact info
+건강한 공동체를 위해 구성원들은 위 행동강령을 준수하고, 주의 받은 구성원은 즉시 행동강령을 준수할 것을 요구합니다. 제재를 받은 경우 행사 참여를 위해 지불한 비용은 돌려받을 수 없습니다. 모든 구성원은 자신이나 다른 사람이 불편을 느끼게 하는 행동을 보았을 때 운영진을 찾거나 gdg.korea+coc@gmail.com 로 보내서 알려야 합니다. 운영진은 이를 인지했을 때 즉시 행동을 취해야 합니다.
 
-- Oleh Zasadnyy, +38 093 486 64 60, [oleh.zasadnyy@gdg.org.ua](mailto:oleh.zasadnyy@gdg.org.ua)
-- Sofiya Huts, +38 093 486 14 25, [sofia.huts@gmail.com](mailto:sofia.huts@gmail.com)
+운영진은 참가자에게 흔쾌히 도움을 주어야 하며 참가자의 안전을 지키기 위한 노력을 해야합니다. 그 노력에는 참가자 보호, 경찰/사법기관으로의 연락을 포함합니다.

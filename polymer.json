@@ -4,7 +4,8 @@
   "fragments": [
     "src/pages/schedule-page.html",
     "src/pages/speakers-page.html",
-    "src/pages/team-page.html"
+    "src/pages/team-page.html",
+    "src/pages/cod-page.html"
   ],
   "sources": [
     "data/**/*",

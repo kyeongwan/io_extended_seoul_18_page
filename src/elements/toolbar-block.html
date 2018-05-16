@@ -21,7 +21,7 @@
     <style include="shared-styles">
       :host {
         --header-color: #fff;
-        --tab-color: #536DFE;
+        --tab-color: #4768FD;
         --paper-menu-button-dropdown-background: #fff;
 
         --paper-tabs: {
@@ -40,8 +40,8 @@
       }
 
       .logo {
-        height: 82px;
-        width: 50px;
+        height: 72px;
+        width: 298px;
       }
 
       iron-image {
@@ -88,7 +88,7 @@
 
     </style>
 
-    <app-toolbar id="mainToolbar">
+    <app-toolbar id="mainToolbar" style="height: 72px;">
       <div hidden$="{{app.isPhoneSize}}" style="height: 72px; width: 44px">
       </div>
       <div class="navItem leftItem" hidden$="{{!app.isPhoneSize}}">
@@ -98,7 +98,7 @@
         <a href="/" hidden$="{{hideLogo}}" fade>
           <iron-image
             class="logo"
-            src="/images/io17_logo.svg"
+            src="/images/io18_logo.svg"
             sizing="cover"
             alt="{$ title $}"
           ></iron-image>
@@ -145,7 +145,7 @@
         </paper-menu-button>
 
         <div class="action-button-wrapper" hidden$="[[app.isPhoneSize]]" layout horizontal center-center>
-          <a href="https://www.meetup.com/ko-KR/GDG-Seoul/events/240286299/" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
+          <a href="https://festa.io/events/31" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
             <paper-button class="action-button">{$ buyTicket $}</paper-button>
           </a>
         </div>
