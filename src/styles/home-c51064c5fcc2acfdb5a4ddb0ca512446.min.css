@@ -1,0 +1,95 @@
+
+.countdown__section{position:relative;
+background:#fff;
+padding:40px 20px 60px;
+margin:0 auto;
+box-sizing:border-box;
+width:100%;
+max-width:1440px}
+@media (min-width: 812px){
+	.countdown__section{padding:120px 60px}
+	.countdown__title{max-width: 600px}
+}
+.countdown__force .countdown__section{background-color:#212121;
+transition:background-color 0.1s}
+.countdown__title{align-items:center;
+display:flex;
+font-size:18px;
+justify-content:space-between;
+margin:0 auto 80px;
+max-width:360px;
+text-align:left;
+white-space:pre}
+.countdown__title--md{font-size:20px;
+line-height:44px;
+display:block;
+margin:0 auto 180px;
+text-align:center;
+white-space:unset}
+.countdown__title svg{height:50px;
+width:70px}
+@media (min-width: 640px){
+	.countdown__title--md{font-size:33px;
+	line-height:44px;
+	display:block;
+	margin:0 auto 180px;
+	text-align:center;
+	white-space:unset}
+	.countdown__title { max-width: 600px; }
+}
+.countdown{margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
+max-width:100%;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none}
+.unit{align-items:flex-end;
+display:flex;
+position:relative}
+.unit.-days,.unit.-hours{padding-right:20px}
+.unit.-minutes,.unit.-seconds{padding-left:20px}
+.digit{width:50%}
+.scaler{height:0;
+padding:0;
+padding-bottom:160%;
+position:relative;
+width:100%}
+.svg-canvas{cursor:pointer;
+height:100%;
+left:0;
+position:absolute;
+top:0;
+transform:translate3d(0, 0, 0);
+width:100%}
+.svg-canvas[data-digit="seconds-second-digit"]{cursor:default}
+.label{color:#202124;
+font-family:'Google Sans', sans-serif;
+font-size:14px;
+font-weight:400;
+line-height:1;
+display:block;
+position:absolute;
+right:-2px}
+.unit.-minutes .label,.unit.-seconds .label{right:0;
+transform:translateX(100%)}@media (min-width: 768px){.countdown{display:flex;
+justify-content:space-between;
+margin:auto;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+width:100%;
+max-width:700px}
+.unit{width:23%}
+.unit.-days,.unit.-hours{padding-right:8px}
+.unit.-minutes,.unit.-seconds{padding-left:8px}}@media (min-width: 1200px){.countdown{max-width:1100px}}@media (max-width: 767px){.label{font-size:10px}
+.unit{margin-bottom:24px;
+width:46%}
+.unit.-days,.unit.-hours{padding-right:0}
+.unit.-minutes,.unit.-seconds{padding-left:0}}
+
+

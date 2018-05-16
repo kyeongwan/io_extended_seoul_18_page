@@ -10,13 +10,107 @@
 <link rel="import" href="../elements/footer-block.html">
 <link rel="import" href="../elements/logos-block.html">
 <link rel="import" href="../elements/map-block.html">
-
+<link rel="import" href="../styles/main-80112f6a3bb49c575938110c8a4b242b.min.css">
 
 <dom-module id="home-page">
 
   <template>
 
 <style type="text/css">
+.countdown__section{position:relative;
+background:#fff;
+padding:40px 20px 60px;
+margin:0 auto;
+box-sizing:border-box;
+width:100%;
+max-width:1440px}
+
+
+@media (min-width: 812px){
+  .countdown__section{padding:120px 60px}
+  .countdown__title{max-width: 600px}
+}
+.countdown__force .countdown__section{background-color:#212121;
+transition:background-color 0.1s}
+.countdown__title{align-items:center;
+display:flex;
+font-size:18px;
+justify-content:space-between;
+margin:0 auto 80px;
+max-width:360px;
+text-align:left;
+white-space:pre}
+.countdown__title--md{font-size:20px;
+line-height:44px;
+display:block;
+margin:0 auto 180px;
+text-align:center;
+white-space:unset}
+.countdown__title svg{height:50px;
+width:70px}
+@media (min-width: 640px){
+  .countdown__title--md{font-size:33px;
+  line-height:44px;
+  display:block;
+  margin:0 auto 180px;
+  text-align:center;
+  white-space:unset}
+  .countdown__title { max-width: 600px; }
+}
+.countdown{margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
+max-width:100%;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none}
+.unit{align-items:flex-end;
+display:flex;
+position:relative}
+.unit.-days,.unit.-hours{padding-right:20px}
+.unit.-minutes,.unit.-seconds{padding-left:20px}
+.digit{width:50%}
+.scaler{height:0;
+padding:0;
+padding-bottom:160%;
+position:relative;
+width:100%}
+.svg-canvas{cursor:pointer;
+height:100%;
+left:0;
+position:absolute;
+top:0;
+transform:translate3d(0, 0, 0);
+width:100%}
+.svg-canvas[data-digit="seconds-second-digit"]{cursor:default}
+.label{color:#202124;
+font-family:'Google Sans', sans-serif;
+font-size:14px;
+font-weight:400;
+line-height:1;
+display:block;
+position:absolute;
+right:-2px}
+.unit.-minutes .label,.unit.-seconds .label{right:0;
+transform:translateX(100%)}@media (min-width: 768px){.countdown{display:flex;
+justify-content:space-between;
+margin:auto;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+width:100%;
+max-width:700px}
+.unit{width:23%}
+.unit.-days,.unit.-hours{padding-right:8px}
+.unit.-minutes,.unit.-seconds{padding-left:8px}}@media (min-width: 1200px){.countdown{max-width:1100px}}@media (max-width: 767px){.label{font-size:10px}
+.unit{margin-bottom:24px;
+width:46%}
+.unit.-days,.unit.-hours{padding-right:0}
+.unit.-minutes,.unit.-seconds{padding-left:0}}
 
   .hero {
     max-width: 1080px;
@@ -93,26 +187,90 @@
 
 
 </style>
+
+<script src="../styles/snap.svg.min.js"></script>
+<script src="../styles/main-99f7a8d8f56527c7d56c6c8a8a4f6eff.min.js"></script>
+<script src="../styles/digit1.js"></script>
     <!-- <statistics-block app="{{app}}" cascaded></statistics-block> -->
     <div class="hero section  ">
       <div class="hero__content">
         <div class="grid ">
           <div class="grid__item grid__item--12-cols grid__item--7-cols--gt-md">
             <div class="hero__main ">
-              <div class="hero__logo hero__logo--spacer">
-                <div class="hero__logo hero__logo--mobile">
-                  <svg width="188" height="133" viewBox="0 0 188 133" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#5471F9" d="M0 111.963h47.71V17.9H0z"></path><path fill="#31E8B7" d="M82.85 0L53.308 131.147l7.42 1.642L90.273 1.642z"></path><path d="M136.648 14c-28.3 0-51.242 22.745-51.242 50.8 0 28.057 22.942 50.8 51.242 50.8 28.301 0 51.242-22.743 51.242-50.8 0-28.055-22.94-50.8-51.242-50.8" fill="#5471F9"></path></g></svg>   
+              <div class="countdown__section">
+    <div class="countdown__title countdown__title--md">
+      <p style="margin-bottom: 0px;margin-top: 0px;">Google I/O Extended Seoul 2018</p>
+      <p style="margin-top: 0px;margin-bottom: 0px;">2018-06-10</p>
+      <p style="margin-top: 0px;">세종대학교 광개토관 컨벤션홀</p>
+    </div>
+  
+
+
+
+    <!-- 카운트 다운 시작 -->
+    <div class="countdown js-countdown-wrapper" aria-label="I/O countdown graphic: 58 days, 9 hours, 42 minutes, 56 seconds until I/O 2018">
+      <div class="unit -days js-days-wrap" aria-hidden="true">
+        <div class="digit">
+          <div class="scaler">
+            <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="days-first-digit" dataset-digit="days-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+            </div>
+          </div>
+          <div class="digit">
+            <div class="scaler">
+              <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="days-second-digit" dataset-digit="days-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+              </div>
+            </div>
+            <span class="label">D</span>
+          </div>
+
+          <div class="unit -hours js-hours-wrap" aria-hidden="true">
+            <div class="digit">
+              <div class="scaler">
+                <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="hours-first-digit" dataset-digit="hours-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
                 </div>
               </div>
-              <div class="hero__title hero__title--sm" aria-level="1" role="heading">
-                Google I/O!! 서울에서도 합니다!! Google I/O 2017 Extended in Seoul!!
+              <div class="digit">
+                <div class="scaler">
+                  <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="hours-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+                  </div>
+                </div>
+                <span class="label">H</span>
               </div>
-              <div class="hero__date">
-                JUL 2, 2017
-              </div>
-              <div class="hero__location">
-                세종대학교 광개토관 컨벤션홀
-              </div>
+
+              <div class="unit -minutes js-minutes-wrap" aria-hidden="true">
+                <div class="digit">
+                  <div class="scaler">
+                    <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="minutes-first-digit" dataset-digit="minutes-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+                    </div>
+                  </div>
+                  <div class="digit">
+                    <div class="scaler">
+                      <svg class="svg-canvas js-svg-canvas js-set-one" data-digit="minutes-second-digit" dataset-digit="minutes-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+                      </div>
+                    </div>
+                    <span class="label">M</span>
+                  </div>
+
+                  <div class="unit -seconds js-seconds-wrap" aria-hidden="true">
+                    <div class="digit">
+                      <div class="scaler">
+                        <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="seconds-first-digit" dataset-digit="seconds-first-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+                        </div>
+                      </div>
+                      <div class="digit">
+                        <div class="scaler">
+                          <svg class="svg-canvas js-svg-canvas js-set-two" data-digit="seconds-second-digit" dataset-digit="seconds-second-digit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 240"><desc>Created with Snap</desc><defs></defs>
+                          </div>
+                        </div>
+                        <span class="label">S</span>
+                      </div>
+                    </div>
+                    <!-- 카운트다운 끝 -->
+
+
+
+
+                  </div>
             </div>
           </div>
           <div class="box__cta">
