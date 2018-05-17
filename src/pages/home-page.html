@@ -1,5 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
-
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../behaviors/cascaded-behavior.html">
 <link rel="import" href="../behaviors/page-behavior.html">
 <link rel="import" href="../elements/statistics-block.html">
@@ -9,8 +10,8 @@
 <link rel="import" href="../elements/about-block.html">
 <link rel="import" href="../elements/footer-block.html">
 <link rel="import" href="../elements/logos-block.html">
+
 <link rel="import" href="../elements/map-block.html">
-<link rel="import" href="../styles/main-80112f6a3bb49c575938110c8a4b242b.min.css">
 
 <dom-module id="home-page">
 
@@ -43,7 +44,7 @@ white-space:pre}
 .countdown__title--md{font-size:20px;
 line-height:44px;
 display:block;
-margin:0 auto 180px;
+margin:0 auto 100px;
 text-align:center;
 white-space:unset}
 .countdown__title svg{height:50px;
@@ -52,7 +53,7 @@ width:70px}
   .countdown__title--md{font-size:33px;
   line-height:44px;
   display:block;
-  margin:0 auto 180px;
+  margin:0 auto 100px;
   text-align:center;
   white-space:unset}
   .countdown__title { max-width: 600px; }
@@ -145,12 +146,12 @@ width:46%}
     color: #424242;
   }
   .button {
-    background: #1CE8B5;
+    align-items:center;
+    display:flex;
+    background: #5471f9;
     border-radius: 2px;
-    color: #424242;
-    display: inline-block;
+    color: #fff;
     font-weight: 500;
-    padding: 5px 25px;
     text-transform: uppercase;
     transition: all 200ms ease;
   }
@@ -160,8 +161,10 @@ width:46%}
   }
 
   .box__cta {
-    margin-top: 20px;
-    margin-bottom: 0;
+    align-items:center;
+    display:flex;
+    margin: auto;
+    max-width: 150px;
   }
 
    @media (min-width: 601px){
@@ -196,6 +199,9 @@ width:46%}
     height: 700px;
   }
 
+  iron-icon {
+    padding: 5px;
+  }
 
     font-size: 15px;
     line-height: 1.87;
@@ -211,20 +217,18 @@ width:46%}
           <div class="grid__item grid__item--12-cols grid__item--7-cols--gt-md">
             <div class="hero__main ">
               <div class="countdown__section">
-    <div class="countdown__title countdown__title--md">
-      <p style="margin-bottom: 0px;margin-top: 0px;">Google I/O Extended Seoul 2018</p>
-      <p style="margin-top: 0px;margin-bottom: 0px;">2018-06-10</p>
-      <p style="margin-top: 0px;">세종대학교 광개토관 컨벤션홀</p>
-    </div>
-  
-
-
-                  </div>
+                <div class="countdown__title countdown__title--md">
+                  <p style="margin-bottom: 0px;margin-top: 0px;">Google I/O Extended Seoul 2018</p>
+                  <p style="margin-top: 0px;margin-bottom: 0px;">2018-06-10</p>
+                  <p style="margin-top: 0px;">세종대학교 광개토관 컨벤션홀</p>
+                </div>
+                <div class="box__cta">
+            <a href="https://festa.io/events/31" target="_blank" class="button"><paper-button class="action-button" ga-event-category="tickets"> <iron-icon icon="icons:ticket"></iron-icon>{$ buyTicket $}</paper-button></a>
+          </div>
+              </div>
             </div>
           </div>
-          <div class="box__cta">
-            <a href="https://www.meetup.com/ko-KR/GDG-Seoul/events/240286299/" target="_blank" class="button">Apply</a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -284,10 +288,4 @@ width:46%}
 
     }());
   </script>
-
-  <script src="../../scripts/snap.svg.min.js"></script>
-
-<script src="../../scripts/main-99f7a8d8f56527c7d56c6c8a8a4f6eff.min.js"></script>
-<script src="../../scripts/digit1.js"></script>
-
 </dom-module>

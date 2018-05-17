@@ -15,13 +15,13 @@
     "backgroundColor": "#536DFE"
   },
   "firebase": {
-    "name": " IO-Extended-Seoul-17",
-    "domain": "IO-Extended-Seoul-17.firebaseapp.com",
-    "database": "https://io-extended-seoul-17.firebaseio.com/",
-    "api": "AIzaSyDdtIefOcxqF-3FCcqNFVOFApzU_NeJmcY",
+    "name": "io-extended-seoul-18",
+    "domain": "io-extended-seoul-18.firebaseapp.com",
+    "database": "https://io-extended-seoul-18.firebaseio.com/",
+    "api": "AIzaSyBBPqKovCQZVCtbjEL1-Y5z1ns_4_5Lb5Q",
     "userSessionsPath": "/userSessions",
     "ratingsPath": "/ratings",
-    "indexedDbSession": "ioex17"
+    "indexedDbSession": "ioex18"
   },
   "mailchimp": {
     "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",

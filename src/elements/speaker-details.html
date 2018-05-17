@@ -23,7 +23,12 @@
 
   <template>
 
-    <style include="shared-styles dialog-styles"></style>
+    <style include="shared-styles dialog-styles">
+      paper-toolbar {
+        background-color: #3f51b5;
+      }
+    </style>
+
 
     <paper-scroll-header-panel id="scrollHeaderPanel" condenses="{{app.isPhoneSize}}" no-reveal="{{!app.isPhoneSize}}">
       <paper-toolbar class="tall">
@@ -31,7 +36,7 @@
           <paper-icon-button class="back-button" dialog-dismiss icon="arrow-back"></paper-icon-button>
         </a>
         <div class="middle fallback-image-wrapper" hidden$="{{app.isPhoneSize}}">
-          <iron-image class="fallback-image" src="/images/io17_logo.svg"
+          <iron-image class="fallback-image" src="/images/io18_logo_square.svg"
                       alt="{$ title $}"></iron-image>
         </div>
         <div id="title" class="bottom title toolbar-title" hidden$="{{!app.isPhoneSize}}">[[speaker.name]]</div>
@@ -155,10 +160,12 @@
 
         _onNeonAnimationFinish: function () {
           if (this.opened) {
-            Polymer.IronDropdownScrollManager.pushScrollLock(this.$.scrollHeaderPanel);
+            // Polymer.IronDropdownScrollManager.pushScrollLock(this.$.scrollHeaderPanel);
+            document.body.style.overflow = 'hidden';
             this._finishRenderOpened();
           } else {
-            Polymer.IronDropdownScrollManager.removeScrollLock(this.$.scrollHeaderPanel);
+            // Polymer.IronDropdownScrollManager.removeScrollLock(this.$.scrollHeaderPanel);
+             document.body.style.overflow = '';
             this._finishRenderClosed();
           }
 
