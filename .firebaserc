@@ -1,6 +1,6 @@
 {
   "projects": {
-    "io": "io-extended-seoul-17",
-    "default": "testserver-cf6ed"
+    "io": "io-extended-seoul-18",
+    "default": "io-extended-seoul-18"
   }
 }
