@@ -100,7 +100,7 @@
         </div>
       </paper-toolbar>
       <div class="content">
-  
+
         <div class="metadata-wrapper">
           <div class="main-info">
             <div class="info">
@@ -148,7 +148,7 @@
              rel="noopener noreferrer">
             <paper-button class="action">
               <iron-icon icon="presentation"></iron-icon>
-              {$ viewPresentation $}
+              [[session.title]] {$ viewPresentation $}
             </paper-button>
           </a>
 
@@ -160,7 +160,7 @@
           </div>
         </div>
 
-        
+
       </div>
 
       <template is="dom-if" if="{{session.speakers.length}}">
