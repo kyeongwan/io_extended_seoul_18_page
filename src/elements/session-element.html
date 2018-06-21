@@ -79,6 +79,11 @@
         color: #fff;
       }
 
+      .slide-block {
+        padding: 12px 24px;
+        color: #fff;
+      }
+
       .image-overlay {
         transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1);
         opacity: 0.85;
@@ -181,6 +186,14 @@
             <ul class="session-meta">
               <li hidden$="[[!session.track.title]]">[[_checkTrackName(session.track.title, session.title)]]</li>
             </ul>
+            <ul class="session-meta">
+              <li>
+                <p hidden$="[[!session.presentation]]" >
+                  <iron-icon icon="presentation"></iron-icon>
+                  Slide: [[session.title]]
+                </p>
+              </li>
+            </ul>
           </div>
 
           <div class="bottom-caption" layout horizontal center justified>
@@ -195,8 +208,6 @@
                 <span>Recording available</span>
               </div>
             </div>
-
-          
           </div>
 
           <div
@@ -221,7 +232,6 @@
             </template>
 
           </div>
-
         </div>
       </paper-card>
     </a>
